@@ -1,0 +1,38 @@
+Variable Estática
+
+En informática una variable estática es una variable que ha sido ubicada estáticamente y cuyo tiempo de vida se extiende durante toda la ejecución del programa. Normalmente una variable estática tiene un ámbito más amplio que otras variables. Los valores de variables estáticas se pueden establecer una vez (durante el tiempo de ejecución) o se pueden cambiar en múltiples ocasiones durante la ejecución del programa. La terminología "variable estática" se basa en C y C++, pero también se usa en muchos lenguajes de programación derivados. En lenguajes de diferente origen el mismo concepto puede denominarse "variable global".
+Ciclo de Vida de las Variables:
+Las variables tienen distintos ciclos de vida dependiendo del tipo al que pertenezcan:
+1)	Variables de instancia (u objeto): 
+  a)	Se crean cuando se crea el objeto que las contiene. 
+  b)	Se inicializan por defecto si no se hace de modo explícito: 
+    i)	0 para números, "false" para booleano, "null" para objetos. – 
+  c)	Se destruyen cuando el recolector de basura de Java no encuentra referencias activas para el objeto. 
+2)	Variables estáticas (o de clase): 
+  a)	Se crean cuando la clase se usa por primera vez. 
+  b)	Se inicializan por defecto si no se hace de modo explícito: 
+    i)	0 para números, "false" para booleano, "null" para objetos.
+  c)	Suelen existir para el resto del programa (salvo que no esté cargado). 
+3)	Variables locales (o de bloque): 
+  a)	Creadas en la sentencia en la que están definidas. 
+  b)	No se inicializan por defecto. Contienen datos imprevisibles. 
+  c)	Se destruyen al salir del bloque (en la llave final).
+	La memoria dinámica es aquella que se solicita en tiempo de ejecución de una variable. No puede ser definida y no se sabe el tamaño real que tendrá en tiempo de compilación. Funciona de manera que mientras más memoria necesite una variable, puede solicitar más al sistema operativo y seguir ejecutando. 
+
+Clase
+Una clase es una construcción que permite crear tipos personalizados propios mediante la agrupación de variables de otros tipos, métodos y eventos. Una clase es como un plano. Define los datos y el comportamiento de un tipo. Si la clase no se declara como estática, el código de cliente puede utilizarla mediante la creación de objetos o instancias que se asignan a una variable. La variable permanece en memoria hasta que todas las referencias a ella están fuera del ámbito. En ese momento, CLR la marca como apta para la recolección de elementos no utilizados.
+
+Objeto
+Un objeto es una unidad dentro de un programa de computadora que consta de un estado y de un comportamiento, que a su vez constan respectivamente de datos almacenados y de tareas realizables durante el tiempo de ejecución. Un objeto puede ser creado instanciando una clase, como ocurre en la programación orientada a objetos, o mediante escritura directa de código y la replicación otros objetos, como ocurre en la programación basada en prototipos.
+
+Instanciación
+La instanciación se refiere a la realización específica de una clase o prototipo determinados. 
+
+Herencia
+La herencia es un mecanismo que permite crear clases nuevas o subclases a partir de clases previamente diseñadas y probadas; evitando el rediseño, modificación y verificación de la parte ya implementada. La herencia implica que una subclase tiene todos los atributos y funcionalidad de una super clase. 
+Sobrecarga
+Es un mecanismo que permite asignar el mismo nombre a funciones distintas. Para el compilador estas funciones no tienen nada en común a excepción del identificador, por lo que se trata en realidad de un recurso semántico del lenguaje que solo tiene sentido cuando se asigna el mismo nombre a funciones que realizan tareas similares en objetos diferentes.
+Por ejemplo, si tuviésemos objetos que fuesen diversos tipos de polígono (triángulo, cuadrado, pentágono, círculo, etc), tendría sentido denominar getArea a todas las funciones que calculasen el área de las diversas figuras, aunque naturalmente serían funciones distintas en cada caso. También tendría sentido denominar open a las funciones que abrieran un fichero o una línea de comunicación.
+
+Shadowing (Ensombrecimiento):
+Se llama shadowing al hecho de que en una clase una variable miembro y una variable local definida en un método miembro, se llamen igual.
